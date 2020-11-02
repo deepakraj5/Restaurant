@@ -1,0 +1,54 @@
+div{
+    width: 250px;
+    margin: 5% auto;
+    padding: 50px;
+    box-shadow: 0 0 10px 10px;
+    
+    
+}
+
+input{
+    border: none;
+    border-bottom: solid;
+    border-bottom-style: ridge
+
+}
+#cont{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: red;
+}
+.center{
+    text-align: center;
+}
+#head{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: red;
+    font-family: 'Dancing Script', cursive;
+    
+}
+input,div{
+    background-color: black;
+    color: lightgoldenrodyellow;
+   
+}
+#box{
+    border: solid;
+}
+.right{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    
+    background-image : url('http://www.baltana.com/files/wallpapers-8/Tea-Splash-HQ-Background-Wallpaper-24036.jpg') ;
+    background-repeat : no-repeat;
+    background-size : cover;
+    
+}

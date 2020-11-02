@@ -1,0 +1,38 @@
+div{
+    width: 350px;
+    margin: 5% auto;
+    padding: 50px;
+    box-shadow: 0 0 10px 10px;
+    border: solid;
+    
+}
+input[type="submit"]{
+    width: 100%;
+    border-style: ridge;
+}
+input{
+    border: none;
+    border-bottom: solid;
+    border-bottom-style: ridge
+
+}
+input,div{
+    background-color: black;
+    color: lightgoldenrodyellow;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+body{
+    
+    background-image : url('http://www.baltana.com/files/wallpapers-8/Tea-Splash-HQ-Background-Wallpaper-24036.jpg') ;
+    background-repeat : no-repeat;
+    background-size : cover;
+    
+}
+ 
