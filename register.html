@@ -6,10 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NatureDine</title>
         <link rel="stylesheet" type="text/css" href="register.css">
+        <script type="text/javascript">
+            function validateForm(){
+                var pass = document.getElementById("psw").value;
+                var conpass = document.getElementById("conpsw").value;
+                if(pass.length<8){
+                    alert("password must be 8 characters long");
+                    return false;
+                }
+                if(pass != conpass){
+                    alert("Enter the correct password");
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <div >
-           <form action="home.html">
+           <form action="regidterData.jsp" method="post">
                <table cellpadding="5" border="0"  class="center">
                    <tr>
                        <td colspan="2">REGISTER</td>
@@ -19,43 +33,45 @@
                    </tr>
                    <tr>
                        <td>
-                           <input type="text" placeholder="Firstname" size="20" required>
+                           <input type="text" name="fname" placeholder="Firstname" size="20" required>
                        </td>
                        <td>
-                           <input type="text" placeholder="lastname" size="20" required>
+                           <input type="text" name="lname" placeholder="lastname" size="20" required>
                        </td>
-                   
+                   </tr>
+                    <tr>
+                       <td colspan="2" >
+                           <input type="text" name="uname" placeholder="Username" size="50" required>
+                       </td>
                    </tr>
                    <tr>
                        <td colspan="2" >
-                           <input type="email" placeholder="Email" size="50" required>
+                           <input type="email" name="mail" placeholder="Email" size="50" required>
                        </td>
                    </tr>
                    <tr>
                       <td colspan="2" >
-                          <input type="password" placeholder="Password" size="50" required>
+                          <input type="password" id="psw" placeholder="Password" size="50" required>
                        </td> 
                    </tr>
                    <tr>
                       <td colspan="2" >
-                          <input type="password" placeholder="Confirm Password" size="50" required>
+                          <input type="password" id="conpsw" placeholder="Confirm Password" size="50" required>
                        </td> 
                    </tr>
                    <tr>
                        <td colspan="2">
                            <input id="box" type="checkbox" required> I accept the Terms of Use & Privacy Policy
-                       </td>
-                       
+                       </td>   
                    </tr>
                    <tr >
-                    <td colspan="2"><input type="submit" value="Register Now"></td>
+                    <td colspan="2"><input type="submit" onclick =" return validateForm()" value="Register Now"></td>
                    </tr>
-                   <tr >
-                    <td colspan="2"><a href="login.html" target="_self">Already have an account</a></td>
+                   <tr>
+                    <td colspan="2"><a href="C:\Users\sandhoas\eclipse-workspace\wad\WebContent\login.html" target="_self">Already have an account</a></td>
                    </tr>
                </table>
             </form>   
         </div>
-    
     </body>
 </html>
